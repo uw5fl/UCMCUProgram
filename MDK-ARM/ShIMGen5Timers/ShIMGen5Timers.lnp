@@ -1,0 +1,24 @@
+--cpu Cortex-M4.fp
+"shimgen5timers\startup_stm32f411xe.o"
+"shimgen5timers\stm32f4xx_hal_pwr_ex.o"
+"shimgen5timers\stm32f4xx_hal_flash_ex.o"
+"shimgen5timers\stm32f4xx_hal_dma_ex.o"
+"shimgen5timers\stm32f4xx_hal.o"
+"shimgen5timers\stm32f4xx_hal_tim.o"
+"shimgen5timers\stm32f4xx_hal_flash_ramfunc.o"
+"shimgen5timers\stm32f4xx_hal_flash.o"
+"shimgen5timers\stm32f4xx_hal_gpio.o"
+"shimgen5timers\stm32f4xx_hal_dma.o"
+"shimgen5timers\stm32f4xx_hal_cortex.o"
+"shimgen5timers\stm32f4xx_hal_rcc.o"
+"shimgen5timers\stm32f4xx_hal_tim_ex.o"
+"shimgen5timers\stm32f4xx_hal_pwr.o"
+"shimgen5timers\stm32f4xx_hal_rcc_ex.o"
+"shimgen5timers\stm32f4xx_hal_msp.o"
+"shimgen5timers\stm32f4xx_it.o"
+"shimgen5timers\main.o"
+"shimgen5timers\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "ShIMGen5Timers\ShIMGen5Timers.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ShIMGen5Timers.map" -o ShIMGen5Timers\ShIMGen5Timers.axf
